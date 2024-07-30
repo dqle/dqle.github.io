@@ -1597,12 +1597,40 @@ input, select, textarea {
 
 		.image-crop-bottom {
 			width: 100%; /* Adjust width as necessary */
-			height: auto; /* Maintain aspect ratio */
+			height: 100%; /* Maintain aspect ratio */
 			object-fit: cover; /* Ensures the image covers the container */
 			object-position: top; /* Aligns the top of the image with the container */
 			height: 300px; /* Set the height to the desired amount */
 			overflow: hidden; /* Hide the overflow to crop the bottom */
 		  }
+
+		.project-container {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 20px; /* Add some space between each project */
+		}
+		
+		.image-description {
+			max-width: 200px; /* Adjust the width as needed */
+			margin-right: 20px; /* Space between the image-description and project-description */
+			text-align: center;
+		}
+		
+		.image-description img {
+			max-width: 100%; /* Ensure the image fits within the container */
+			height: auto; /* Maintain the aspect ratio */
+			margin-bottom: 10px; /* Space between the image and its description */
+		}
+		
+		.project-description {
+			flex-grow: 1; /* Allow the description to take up the remaining space */
+			display: flex;
+			align-items: center; /* Align text vertically in the center */
+		}
+		
+		.project-description p {
+			margin: 0; /* Remove default margin */
+		}
 
 /* Button */
 
