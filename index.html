@@ -1,168 +1,361 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Duc Le</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Duc Le — Site Reliability &amp; Cloud Platform Engineer</title>
+<meta name="description" content="Duc Le is a Site Reliability / Cloud Platform Engineer working with GCP, Kubernetes, Terraform, GitOps and observability." />
+<meta property="og:title" content="Duc Le — SRE / Cloud Platform Engineer" />
+<meta property="og:description" content="Site Reliability &amp; Cloud Platform Engineer. Kubernetes, GitOps, Terraform, observability." />
+<meta property="og:image" content="images/me.jpg" />
+<meta property="og:url" content="https://dqle.io/" />
+<link rel="canonical" href="https://dqle.io/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='32' y='43' font-family='system-ui,sans-serif' font-size='30' font-weight='700' fill='%2322d3ee' text-anchor='middle'%3EDL%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top"><span class="brand-mark">DL</span><span class="brand-name">Duc Le</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#homelab">Home&nbsp;Lab</a>
+    <a href="#projects">Projects</a>
+  </nav>
+  <div class="topbar-actions">
+    <a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/ducqle/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-primary btn-sm" href="https://github.com/dqle" target="_blank" rel="noopener">GitHub</a>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13.2A9 9 0 1 1 10.8 3a7.5 7.5 0 0 0 10.2 10.2Z"/></svg>
+    </button>
+  </div>
+</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#me" class="icon solid fa-user"><span>Me</span></a>
-						<a href="#homelab" class="icon solid fa-server"><span>Home Lab</span></a>
-						<a href="#project" class="icon solid fa-folder"><span>Project</span></a>
-						<a href="https://www.linkedin.com/in/ducqle/" class="icon brands fa-linkedin" target="_blank"><span>LinkedIn</span></a>
-						<a href="https://github.com/dqle" class="icon brands fa-github" target="_blank"><span>GitHub</span></a>
-					</nav>
+<main id="main">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Site Reliability &amp; Cloud Platform Engineer</p>
+        <h1 class="hero-title">
+          I build <span class="grad">self-serve cloud platforms</span><br />
+          and automate the boring parts away.
+        </h1>
+        <p class="hero-lede">
+          Hi, I'm Duc. I design and run production infrastructure on GCP and AWS — Kubernetes,
+          GitOps, Terraform and observability — so product teams can ship on autopilot.
+          Currently Platform Engineer at <strong>Jenzabar</strong>, previously 5 years as Sr. SRE at Arcules.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#experience">See my experience</a>
+          <a class="btn btn-ghost" href="#homelab">Tour the home lab</a>
+        </div>
+        <ul class="hero-stats">
+          <li><b>8+</b><span>years in infrastructure &amp; SRE</span></li>
+          <li><b>$300k</b><span>/yr cloud spend removed</span></li>
+          <li><b>3-node</b><span>K3s cluster running at home</span></li>
+        </ul>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-card">
+          <img src="images/me.jpg" alt="Duc Le" width="420" height="420" />
+          <div class="photo-meta">
+            <span class="mono">dqle@k3s:~$</span>
+            <span>kubectl get pods &mdash; A<br />NAME&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;AGE</span>
+            <span>website&nbsp;Running&nbsp;now</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<!-- Me -->
-							<article id="me" class="panel intro">
-								<header>
-									<h1>Duc Le</h1>
-									<p>SRE | Cloud Infrastructure Engineer</p>
-								</header>
-								<a href="#homelab" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my home lab</span></span>
-									<img src="images/me.jpg" class="image-crop-bottom" />
-								</a>
-							</article>
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">Infrastructure that is boring on purpose</h2>
+      <div class="about-grid reveal">
+        <div class="about-prose">
+          <p>
+            I've spent the last decade turning hand-built environments into repeatable systems:
+            greenfield GCP platforms built from custom Terraform modules, CI/CD pipelines that
+            deploy microservices to GKE across regions, and observability that makes incidents
+            short and post-mortems honest.
+          </p>
+          <p>
+            My favorite work is the kind nobody notices — the deployment that just succeeds, the
+            certificate that renews itself, the alert that never fires. At home I keep that habit
+            alive with a low-power lab: Proxmox, a 3-node K3s cluster, a Raspberry Pi NAS and a
+            pile of mini PCs for game servers and experiments.
+          </p>
+        </div>
+        <ul class="about-highlights">
+          <li><span class="k">Platforms</span><span>GitOps delivery with ArgoCD &amp; Crossplane, Helm chart standardization, in-house releases</span></li>
+          <li><span class="k">Efficiency</span><span>Traced orphaned disks and stale snapshots, cut idle cloud spend by $300k+ per year</span></li>
+          <li><span class="k">Automation</span><span>Automated SSL renewal, replacing paid DigiCert certs with free Google Trust Services</span></li>
+          <li><span class="k">Reliability</span><span>On-call with PagerDuty, Datadog, Grafana &amp; VictoriaMetrics; led post-mortems</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-						<!-- Home Lab -->
-						<article id="homelab" class="panel">
-							<header>
-								<h2>Home Lab</h2>
-							</header>
-							<p>
-								This small and low powered home lab is designed for experimenting with new technologies and hosting game servers and applications!
-							</p>
-							<div class="image-container" style="margin-bottom: 20px;">
-								<a class="image fit"><img src="images/lab-overview.jpg" style="width: 100%; height: auto;" alt="Lab Overview"></a>
-							</div>
-							<section>
-								<div class="row" style="margin-bottom: 20px;">
-									<div class="col-4 col-6-medium col-12-small image-container">
-										<a class="image fit"><img src="images/pi-nas.jpg" alt="Raspberry Pi NAS"></a>
-									</div>
-									<div class="col-8 col-6-medium col-12-small">
-										<p>This is my Raspberry Pi 5 with dual 2TB NVMe drives. It runs OpenMediaVault on RAID 1, providing NAS storage for my Kubernetes cluster and Plex server.</p>
-									</div>
-								</div>
-								<div class="row" style="margin-bottom: 20px;">
-									<div class="col-4 col-6-medium col-12-small image-container">
-										<a class="image fit"><img src="images/k3s.jpg" alt="K3s Cluster"></a>
-									</div>
-									<div class="col-8 col-6-medium col-12-small">
-										<p>The top machine is an Intel NUC used to host my Plex Media Server. The bottom is my Proxmox Hypervisor, which runs a 3-node K3S Kubernetes cluster with 1 master and 2 worker nodes</p>
-									</div>
-								</div>
-								<div class="row" style="margin-bottom: 20px;">
-									<div class="col-4 col-6-medium col-12-small image-container">
-										<a class="image fit"><img src="images/windows-poe.jpg" alt="Windows Server with PoE"></a>
-									</div>
-									<div class="col-8 col-6-medium col-12-small">
-										<p>This is my PoE Windows Server setup. Each white mini PC is a Minisforum S100, capable of running PoE. These are used for executing scripts for games and applications in a Windows environment that requires a GPU.</p>
-									</div>
-								</div>
-							</section>
-						</article>
+  <!-- ============ SKILLS ============ -->
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">Toolbox</h2>
+      <div class="skills-grid reveal">
+        <article class="skill-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.8-9.95A6 6 0 0 1 17.5 9.5A4.5 4.5 0 0 1 17 18H7Z"/></svg>Cloud</h3>
+          <ul class="chips">
+            <li>GCP</li><li>GKE</li><li>Cloud SQL</li><li>BigQuery</li><li>Pub/Sub</li><li>Cloud Storage</li><li>Cloud DNS</li><li>IAM</li><li>KMS</li><li>VPC</li><li>AWS</li><li>Lambda</li><li>S3</li><li>RDS</li><li>Secrets Manager</li><li>API Gateway</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>Containers &amp; GitOps</h3>
+          <ul class="chips">
+            <li>Kubernetes</li><li>GKE</li><li>OpenShift</li><li>K3s</li><li>Docker</li><li>Helm</li><li>ArgoCD</li><li>Crossplane</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></svg>IaC &amp; Scripting</h3>
+          <ul class="chips">
+            <li>Terraform</li><li>Ansible</li><li>Bash</li><li>Python</li><li>Go</li><li>PowerShell</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 8-8"/><path d="M12 12l4-4"/><circle cx="12" cy="12" r="1.5"/></svg>CI/CD &amp; Monitoring</h3>
+          <ul class="chips">
+            <li>GitHub Actions</li><li>GitLab</li><li>Spinnaker</li><li>Bitbucket</li><li>Datadog</li><li>Prometheus</li><li>Grafana</li><li>VictoriaMetrics</li><li>ELK</li><li>Nagios</li><li>PagerDuty</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8h14M5 16h14"/><circle cx="12" cy="12" r="9"/></svg>Networking &amp; Practices</h3>
+          <ul class="chips">
+            <li>TCP/IP</li><li>DNS</li><li>DHCP</li><li>VPN</li><li>VLAN</li><li>Load Balancing</li><li>Nginx</li><li>RabbitMQ</li><li>Redis</li><li>VerneMQ</li><li>Active Directory</li><li>Agile/Scrum</li><li>Kanban</li><li>Jira</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-						<!-- Project -->
-						<article id="project" class="panel">
-						    <header>
-						        <h2>Project</h2>
-						    </header>
-						    <p>
-						        Below are my personal projects that I've done. Click on them to learn more!
-						    </p>
-						    <section>
-						        <div class="row">
-						            <div class="col-12 project-container">
-						                <div class="image-description">
-						                    <a href="https://github.com/dqle/Archero-Farmer" class="image fit" target="_blank">
-						                        <img src="images/archero-farmer.png" alt="">
-						                    </a>
-						                    <p>Archero Farmer</p>
-						                </div>
-						                <div class="project-description">
-						                    <p>Archero-Farmer is a OpenCV Python-based bot for the Archero game on Android NOX emulator. It continuously plays stages based on available energy and can be left on 24/7 to maximize gameplay efficiency.</p>
-						                </div>
-						            </div>
-						            <div class="col-12 project-container">
-						                <div class="image-description">
-						                    <a href="https://github.com/dqle/mabi-ah-discord" class="image fit" target="_blank">
-						                        <img src="images/mabi-ah-discord.gif" alt="">
-						                    </a>
-						                    <p>Mabinogi Auction House Discord Bot</p>
-						                </div>
-						                <div class="project-description">
-						                    <p>This Python-based Discord bot queries MabiBase for new items and alerts users if they match specified criteria. It supports item watch lists, editing, and deletion, with data stored on MongoDB Atlas Cloud. Users can input and edit desired items via built-in Discord forms.</p>
-						                </div>
-						            </div>
-						            <div class="col-12 project-container">
-						                <div class="image-description">
-						                    <a href="https://github.com/dqle/pi-attention" class="image fit" target="_blank">
-						                        <img src="images/pi-attention.gif" alt="">
-						                    </a>
-						                    <p>Pi-Attention</p>
-						                </div>
-						                <div class="project-description">
-						                    <p>Pi-Attention is a pager system built with Raspberry Pi, bash scripting, and Python Flask. It sends bright, predefined messages displayed on an LED pi hat with a single button press. This ensures you never miss a notification again!</p>
-						                </div>
-						            </div>
-						            <div class="col-12 project-container">
-						                <div class="image-description">
-						                    <a href="https://github.com/dqle/inMeeting" class="image fit" target="_blank">
-						                        <img src="images/inMeeting.gif" alt="">
-						                    </a>
-						                    <p>inMeeting</p>
-						                </div>
-						                <div class="project-description">
-						                    <p>inMeeting is a MacOS and Windows 11 cross-platform Golang app that automatically turns on your Raspberry Pi Unicorn Mini Hat light when you're in a meeting!</p>
-						                </div>
-						            </div>
-						            <div class="col-12 project-container">
-						                <div class="image-description">
-						                    <a href="https://github.com/dqle/go-media-devices-state" class="image fit" target="_blank">
-						                        <img src="images/go-media-devices-state.png" alt="">
-						                    </a>
-						                    <p>go-media-devices-state</p>
-						                </div>
-						                <div class="project-description">
-						                    <p>Cross-platform Go module that supports both MacOS and Windows. This module is used to get camera/microphone state, i.e. it checks if camera/microphone is ON or OFF</p>
-						                </div>
-						            </div>
-						            <div class="col-12 project-container">
-						                <div class="image-description">
-						                    <a href="https://github.com/dqle/hoyolab-check-in-helm" class="image fit" target="_blank">
-						                        <img src="images/hoyolab-check-in.gif" alt="">
-						                    </a>
-						                    <p>Hoyolab Check In Helm Chart</p>
-						                </div>
-						                <div class="project-description">
-						                    <p>A Helm chart for deploying a Kubernetes cronjob that collects Hoyoverse games daily check in reward. This cronjob will run at 12:10 AM UTC+8 by default (10 minutes after daily reward reset).</p>
-						                </div>
-						            </div>
-						        </div>
-						    </section>
-						</article>
-					</div>
-			</div>
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title">Where I've built things</h2>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <ol class="timeline">
+        <li class="job reveal">
+          <header>
+            <span class="badge badge-now">Present</span>
+            <h3>Platform Engineer</h3>
+            <p class="job-meta"><span class="org">Jenzabar</span><span class="sep"></span><span class="loc">Remote</span><span class="sep"></span><span class="mono">Aug 2026 – Present</span></p>
+          </header>
+          <ul class="bullets">
+            <li>Architected a GitOps delivery platform on GKE using <em>ArgoCD</em> and <em>Crossplane</em>, replacing contractor-built GitHub Actions pipelines and standardizing service releases.</li>
+            <li>Consolidated two contractor-maintained pipelines into a single Helm charts repository for J1API and AI-Assist-API, bringing deployments in-house and fully automating J1API releases.</li>
+            <li>Migrated AI-Assist-API from an in-cluster PostgreSQL StatefulSet to managed <em>Cloud SQL</em> with automated backups, and ran a tier cost analysis to size client environments.</li>
+            <li>Refactored the Terraform codebase for scale — consolidating GKE add-ons such as External Secrets Operator into a reusable platform-services module and moving secrets to Secret Manager data sources.</li>
+            <li>Primary Kubernetes SME; integrated <em>Datadog</em> observability and Newman synthetic API tests for production services.</li>
+          </ul>
+        </li>
 
-	</body>
+        <li class="job reveal">
+          <header>
+            <h3>Senior Site Reliability Engineer</h3>
+            <p class="job-meta"><span class="org">Arcules / Milestone Systems</span><span class="sep"></span><span class="loc">Irvine, CA</span><span class="sep"></span><span class="mono">Aug 2021 – Aug 2026</span></p>
+          </header>
+          <ul class="bullets">
+            <li>Led the Environment Consistency project, greenfielding Arcules' GCP infrastructure with custom Terraform modules for GKE, Cloud SQL, BigQuery, Pub/Sub, IAM and KMS.</li>
+            <li>Cut idle cloud spend by <strong>over $300,000 per year</strong> by tracing orphaned disks and stale snapshots to misconfigured backup and database deployments, then fixing the root causes.</li>
+            <li>Built a Terraform-managed cert-manager + Google Certificate Manager module that automated SSL renewal everywhere, replacing paid DigiCert certificates with free Google Trust Services ones.</li>
+            <li>Owned GitLab and Spinnaker CI/CD pipelines and wrote custom Helm charts to deploy microservices to GKE across multiple projects and regions.</li>
+            <li>Handled on-call incidents with PagerDuty, Cloud Monitoring, VictoriaMetrics and Grafana; led post-mortems.</li>
+            <li>Troubleshot Kubernetes networking, storage and HPA scaling issues; managed Shared VPC networking and set up OAuth2/SAML SSO for Vault and Grafana.</li>
+          </ul>
+        </li>
+
+        <li class="job reveal">
+          <header>
+            <h3>System Engineer II</h3>
+            <p class="job-meta"><span class="org">Lytx, Inc.</span><span class="sep"></span><span class="loc">San Diego, CA</span><span class="sep"></span><span class="mono">Aug 2018 – Aug 2021</span></p>
+          </header>
+          <ul class="bullets">
+            <li>Built an Ansible playbook for zero-downtime, fleet-wide Linux patching with automatic rollback on Nagios failures.</li>
+            <li>Wrote an Ansible module against the Nagios REST API to auto-enroll new production VMs in monitoring at build time.</li>
+            <li>Built a Python Flask webhook service that auto-remediated common New Relic alerts with scripts.</li>
+            <li>Administered on-prem OpenShift clusters plus Windows/Linux servers with Active Directory, PowerShell and Bash.</li>
+          </ul>
+        </li>
+
+        <li class="job reveal">
+          <header>
+            <h3>B.S. Electrical Engineering</h3>
+            <p class="job-meta"><span class="org">University of California, San Diego</span><span class="sep"></span><span class="mono">Sep 2011 – Jun 2016</span></p>
+          </header>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ HOME LAB ============ -->
+  <section class="section alt" id="homelab">
+    <div class="wrap">
+      <p class="eyebrow">Home Lab</p>
+      <h2 class="section-title">Small, low-power, always experimenting</h2>
+      <p class="section-lede">
+        A quiet lab for testing new technology, self-hosting services and running game servers —
+        the same patterns I use at work, at 1/1000th the scale.
+      </p>
+
+      <figure class="lab-hero reveal">
+        <img src="images/lab-overview.jpg" alt="Home lab overview" loading="lazy" decoding="async" />
+        <figcaption>Lab overview — Proxmox host, NUC, Raspberry Pi 5 NAS and PoE mini PCs</figcaption>
+      </figure>
+
+      <div class="lab-grid">
+        <article class="lab-card reveal">
+          <img src="images/pi-nas.jpg" alt="Raspberry Pi 5 NAS with dual NVMe drives" loading="lazy" decoding="async" />
+          <div>
+            <h3>Raspberry Pi 5 NAS</h3>
+            <p>A Pi 5 with dual 2&nbsp;TB NVMe drives running OpenMediaVault on RAID&nbsp;1, providing NAS storage for the Kubernetes cluster and Plex server.</p>
+            <p class="tag-row"><span>OpenMediaVault</span><span>RAID 1</span><span>NFS</span></p>
+          </div>
+        </article>
+        <article class="lab-card reveal">
+          <img src="images/k3s.jpg" alt="Proxmox hypervisor running a 3 node K3s cluster" loading="lazy" decoding="async" />
+          <div>
+            <h3>Proxmox + K3s Cluster</h3>
+            <p>The top machine is an Intel NUC hosting Plex Media Server. The bottom is the Proxmox hypervisor running a 3-node K3s cluster — 1 master, 2 workers.</p>
+            <p class="tag-row"><span>Proxmox</span><span>K3s</span><span>Plex</span></p>
+          </div>
+        </article>
+        <article class="lab-card reveal">
+          <img src="images/windows-poe.jpg" alt="Windows PoE mini PC stack" loading="lazy" decoding="async" />
+          <div>
+            <h3>PoE Windows Server Stack</h3>
+            <p>Each white mini PC is a Minisforum S100 with PoE. They run game and application scripts in a Windows environment that needs a GPU.</p>
+            <p class="tag-row"><span>Minisforum S100</span><span>PoE</span><span>Windows</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section-title">Side quests &amp; open source</h2>
+      <p class="section-lede">Things I built because the problem was interesting. Most of them are on GitHub.</p>
+
+      <div class="project-grid">
+        <article class="project reveal">
+          <a class="project-thumb" href="https://github.com/dqle/Archero-Farmer" target="_blank" rel="noopener">
+            <img src="images/archero-farmer.png" alt="Archero Farmer bot" loading="lazy" decoding="async" />
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/dqle/Archero-Farmer" target="_blank" rel="noopener">Archero Farmer</a></h3>
+            <p>OpenCV + Python bot for the Archero game on the NOX Android emulator. Continuously plays stages based on available energy, so it can run 24/7 to maximize gameplay efficiency.</p>
+            <p class="tag-row"><span>Python</span><span>OpenCV</span><span>Automation</span></p>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-thumb" href="https://github.com/dqle/mabi-ah-discord" target="_blank" rel="noopener">
+            <img src="images/mabi-ah-discord.gif" alt="Mabinogi auction house Discord bot" loading="lazy" decoding="async" />
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/dqle/mabi-ah-discord" target="_blank" rel="noopener">Mabinogi Auction House Discord Bot</a></h3>
+            <p>Python Discord bot that polls MabiBase for new items and alerts users when they match their criteria. Watch lists support create/edit/delete through built-in Discord forms, with data on MongoDB Atlas.</p>
+            <p class="tag-row"><span>Python</span><span>Discord</span><span>MongoDB</span></p>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-thumb" href="https://github.com/dqle/pi-attention" target="_blank" rel="noopener">
+            <img src="images/pi-attention.gif" alt="Pi Attention LED pager" loading="lazy" decoding="async" />
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/dqle/pi-attention" target="_blank" rel="noopener">Pi-Attention</a></h3>
+            <p>A physical pager built from a Raspberry Pi, bash and Python Flask. One button press flashes a bright predefined message on an LED Pi-Hat, so no notification is ever missed.</p>
+            <p class="tag-row"><span>Raspberry Pi</span><span>Flask</span><span>Bash</span></p>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-thumb" href="https://github.com/dqle/inMeeting" target="_blank" rel="noopener">
+            <img src="images/inMeeting.gif" alt="inMeeting status light" loading="lazy" decoding="async" />
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/dqle/inMeeting" target="_blank" rel="noopener">inMeeting</a></h3>
+            <p>Cross-platform Golang app for macOS and Windows&nbsp;11 that lights up a Raspberry Pi Unicorn Mini&nbsp;Hat whenever you are in a meeting — a hardware "do not interrupt me" sign.</p>
+            <p class="tag-row"><span>Go</span><span>macOS</span><span>Windows</span></p>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-thumb" href="https://github.com/dqle/go-media-devices-state" target="_blank" rel="noopener">
+            <img src="images/go-media-devices-state.png" alt="go-media-devices-state" loading="lazy" decoding="async" />
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/dqle/go-media-devices-state" target="_blank" rel="noopener">go-media-devices-state</a></h3>
+            <p>Cross-platform Go module for macOS and Windows that reports camera and microphone state — i.e. whether your camera/mic is currently on or off.</p>
+            <p class="tag-row"><span>Go</span><span>Library</span><span>Privacy</span></p>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-thumb" href="https://github.com/dqle/hoyolab-check-in-helm" target="_blank" rel="noopener">
+            <img src="images/hoyolab-check-in.gif" alt="Hoyolab check in Helm chart" loading="lazy" decoding="async" />
+          </a>
+          <div class="project-body">
+            <h3><a href="https://github.com/dqle/hoyolab-check-in-helm" target="_blank" rel="noopener">Hoyolab Check-In Helm Chart</a></h3>
+            <p>A Helm chart that deploys a Kubernetes cronjob to collect Hoyoverse daily check-in rewards. Runs at 12:10&nbsp;AM UTC+8 by default — ten minutes after the daily reward reset.</p>
+            <p class="tag-row"><span>Helm</span><span>Kubernetes</span><span>CronJob</span></p>
+          </div>
+        </article>
+      </div>
+
+      <a class="btn btn-ghost" href="https://github.com/dqle?tab=repositories" target="_blank" rel="noopener">More on GitHub</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <h2 class="section-title">Let's talk about infrastructure</h2>
+      <p class="section-lede">Open to SRE / platform engineering roles, collaborations and long conversations about Kubernetes.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:dqle123@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg><span class="mono">dqle123@gmail.com</span></a></li>
+        <li><a href="tel:+19166262211"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a11 11 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg><span class="mono">(916) 626-2211</span></a></li>
+        <li><a href="https://www.linkedin.com/in/ducqle/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M7 10v7M7 7v.5M11 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg><span>linkedin.com/in/ducqle</span></a></li>
+        <li><a href="https://github.com/dqle" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 20c-5 1-5-3-7-4m14 6v-4a3 3 0 0 0-1-2c3 0 5-2 5-5a5 5 0 0 0-1-3c1-2 0-4 0-4s-2 0-3 1a5 5 0 0 0-3-1 5 5 0 0 0-5 5c0 1 0 2 1 3-2 0-4 2-4 5a3 3 0 0 0 2 3"/></svg><span>github.com/dqle</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <span class="mono">© <span id="year">2026</span> Duc Le &mdash; dqle.io</span>
+    <span class="footer-links">
+      <a href="#top">Back to top ↑</a>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
 </html>
