@@ -73,11 +73,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .skip:focus { left: 12px; top: 12px; }
 
-.sr-only {
-  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
-  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
-}
-
 ::selection { background: var(--accent); color: var(--accent-ink); }
 
 /* ---------- Buttons ---------- */
@@ -218,19 +213,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 .photo-meta span:first-child { color: var(--accent-3); }
 
 /* ---------- About ---------- */
-.about-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(24px, 4vw, 48px); }
-.about-prose p { color: var(--text-muted); max-width: 60ch; }
+.about-prose { max-width: 68ch; }
+.about-prose p { color: var(--text-muted); }
 .about-prose p:last-child { margin-bottom: 0; }
-.about-highlights { display: grid; gap: 14px; }
-.about-highlights li {
-  display: grid; gap: 4px; padding: 16px 18px; border-radius: var(--radius-sm);
-  background: var(--surface); border: 1px solid var(--border);
-  font-size: 0.92rem; color: var(--text-muted);
-}
-.about-highlights .k {
-  font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase;
-  letter-spacing: 0.14em; color: var(--accent);
-}
 
 /* ---------- Skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
@@ -363,7 +348,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 980px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-photo { order: -1; max-width: 380px; }
-  .about-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 860px) {
   .topbar { flex-wrap: wrap; row-gap: 6px; }
