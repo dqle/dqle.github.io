@@ -1,5 +1,5 @@
 /* ============================================================
-   dqle.io — modern personal site styles
+   dqle.io | modern personal site styles
    Self-contained (no framework, no build step)
    ============================================================ */
 
@@ -216,6 +216,29 @@ ul { margin: 0; padding: 0; list-style: none; }
 .about-prose { max-width: 68ch; }
 .about-prose p { color: var(--text-muted); }
 .about-prose p:last-child { margin-bottom: 0; }
+
+/* ---------- Principles ---------- */
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.principle {
+  position: relative; overflow: hidden;
+  padding: 26px 24px 24px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border);
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+.principle::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform: scaleX(0); transform-origin: left; transition: transform .3s ease;
+}
+.principle:hover { transform: translateY(-5px); border-color: var(--border-strong); box-shadow: var(--shadow); }
+.principle:hover::before { transform: scaleX(1); }
+.principle-num {
+  margin: 0 0 10px; font-family: var(--mono); font-size: 2rem; font-weight: 500;
+  line-height: 1; letter-spacing: -0.02em; color: var(--accent);
+}
+.principle h3 { font-size: 1.12rem; margin-bottom: 12px; }
+.principle p { color: var(--text-muted); font-size: 0.93rem; }
+.principle > p:last-of-type { margin-bottom: 0; }
 
 /* ---------- Skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }

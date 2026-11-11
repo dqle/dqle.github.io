@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Duc Le — Site Reliability &amp; Cloud Platform Engineer</title>
+<title>Duc Le | Site Reliability &amp; Cloud Platform Engineer</title>
 <meta name="description" content="Duc Le is a Site Reliability / Cloud Platform Engineer working with GCP, Kubernetes, Terraform, GitOps and observability." />
-<meta property="og:title" content="Duc Le — SRE / Cloud Platform Engineer" />
+<meta property="og:title" content="Duc Le | SRE and Cloud Platform Engineer" />
 <meta property="og:description" content="Site Reliability &amp; Cloud Platform Engineer. Kubernetes, GitOps, Terraform, observability." />
 <meta property="og:image" content="images/me.jpg" />
 <meta property="og:url" content="https://dqle.io/" />
@@ -25,6 +25,7 @@
   <a class="brand" href="#top"><span class="brand-mark">DL</span><span class="brand-name">Duc Le</span></a>
   <nav class="nav" aria-label="Primary">
     <a href="#about">About</a>
+    <a href="#principles">How I work</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#homelab">Home&nbsp;Lab</a>
@@ -52,8 +53,8 @@
           and automate the boring parts away.
         </h1>
         <p class="hero-lede">
-          Hi, I'm Duc. I design and run production infrastructure on the <strong>Cloud</strong> — Kubernetes,
-          GitOps, Terraform and observability — so product teams can ship on autopilot.
+          Hi, I'm Duc. I design and run production infrastructure on the <strong>Cloud</strong>,
+          with Kubernetes, GitOps, Terraform and observability, so product teams can ship on autopilot.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#experience">See my experience</a>
@@ -65,7 +66,7 @@
           <img src="images/me.jpg" alt="Duc Le" width="420" height="420" />
           <div class="photo-meta">
             <span class="mono">dqle@k3s:~$</span>
-            <span>kubectl get pods &mdash; A<br />NAME&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;AGE</span>
+            <span>kubectl get pods -A<br />NAME&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;AGE</span>
             <span>website&nbsp;Running&nbsp;now</span>
           </div>
         </div>
@@ -102,8 +103,40 @@
     </div>
   </section>
 
+  <!-- ============ PRINCIPLES ============ -->
+  <section class="section alt" id="principles">
+    <div class="wrap">
+      <p class="eyebrow">How I work</p>
+      <h2 class="section-title">Three priorities I optimise for</h2>
+      <p class="section-lede">Every platform job I take on gets measured against these three. If a week's work does not move at least one of them, I question the week.</p>
+
+      <div class="principles">
+        <article class="principle reveal">
+          <p class="principle-num">01</p>
+          <h3>Automate the toil away</h3>
+          <p>If I do something twice, it becomes a module, a playbook or a pipeline. That is where the wins compound: zero-downtime patching with automatic rollback, Nagios enrolment at VM build time, SSL renewal fully automated, deployments driven by GitOps instead of a person clicking through a console.</p>
+          <p class="tag-row"><span>Terraform</span><span>Ansible</span><span>ArgoCD</span><span>Helm</span></p>
+        </article>
+
+        <article class="principle reveal">
+          <p class="principle-num">02</p>
+          <h3>Engineer with the bill in mind</h3>
+          <p>Cloud spend is a design constraint, not a line item to be discovered later. Tracing orphaned disks and stale snapshots back to misconfigured backup and database deployments cut over $300,000 a year of idle spend; a tier cost analysis sized client environments before they were built; free Google Trust Services certificates replaced a paid DigiCert contract.</p>
+          <p class="tag-row"><span>Cost analysis</span><span>Right-sizing</span><span>GCP</span><span>AWS</span></p>
+        </article>
+
+        <article class="principle reveal">
+          <p class="principle-num">03</p>
+          <h3>Make everyone's life easier with step-by-step docs</h3>
+          <p>A platform is only self-serve if the person on the other side can follow it alone. I write the runbook that a new teammate can execute at 3 AM without me: exact commands, expected output, rollback path, and the reason behind each step. Clear docs are how on-call stops being a personality trait.</p>
+          <p class="tag-row"><span>Runbooks</span><span>Post-mortems</span><span>Onboarding</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ SKILLS ============ -->
-  <section class="section alt" id="skills">
+  <section class="section" id="skills">
     <div class="wrap">
       <p class="eyebrow">Skills</p>
       <h2 class="section-title">Toolbox</h2>
@@ -143,7 +176,7 @@
   </section>
 
   <!-- ============ EXPERIENCE ============ -->
-  <section class="section" id="experience">
+  <section class="section alt" id="experience">
     <div class="wrap">
       <p class="eyebrow">Experience</p>
       <h2 class="section-title">Where I've built things</h2>
@@ -159,7 +192,7 @@
             <li>Architected a GitOps delivery platform on GKE using <em>ArgoCD</em> and <em>Crossplane</em>, replacing contractor-built GitHub Actions pipelines and standardizing service releases.</li>
             <li>Consolidated two contractor-maintained pipelines into a single Helm charts repository for J1API and AI-Assist-API, bringing deployments in-house and fully automating J1API releases.</li>
             <li>Migrated AI-Assist-API from an in-cluster PostgreSQL StatefulSet to managed <em>Cloud SQL</em> with automated backups, and ran a tier cost analysis to size client environments.</li>
-            <li>Refactored the Terraform codebase for scale — consolidating GKE add-ons such as External Secrets Operator into a reusable platform-services module and moving secrets to Secret Manager data sources.</li>
+            <li>Refactored the Terraform codebase for scale, consolidating GKE add-ons such as External Secrets Operator into a reusable platform-services module and moving secrets to Secret Manager data sources.</li>
             <li>Primary Kubernetes SME; integrated <em>Datadog</em> observability and Newman synthetic API tests for production services.</li>
           </ul>
         </li>
@@ -203,18 +236,18 @@
   </section>
 
   <!-- ============ HOME LAB ============ -->
-  <section class="section alt" id="homelab">
+  <section class="section" id="homelab">
     <div class="wrap">
       <p class="eyebrow">Home Lab</p>
       <h2 class="section-title">Small, low-power, always experimenting</h2>
       <p class="section-lede">
-        A quiet lab for testing new technology, self-hosting services and running game servers —
-        the same patterns I use at work, at 1/1000th the scale.
+        A quiet lab for testing new technology, self-hosting services and running game servers.
+        Same patterns I use at work, at a thousandth of the scale.
       </p>
 
       <figure class="lab-hero reveal">
         <img src="images/lab-overview.jpg" alt="Home lab overview" loading="lazy" decoding="async" />
-        <figcaption>Lab overview — Proxmox host, NUC, Raspberry Pi 5 NAS and PoE mini PCs</figcaption>
+        <figcaption>Lab overview: Proxmox host, NUC, Raspberry Pi 5 NAS and PoE mini PCs</figcaption>
       </figure>
 
       <div class="lab-grid">
@@ -230,7 +263,7 @@
           <img src="images/k3s.jpg" alt="Proxmox hypervisor running a 3 node K3s cluster" loading="lazy" decoding="async" />
           <div>
             <h3>Proxmox + K3s Cluster</h3>
-            <p>The top machine is an Intel NUC hosting Plex Media Server. The bottom is the Proxmox hypervisor running a 3-node K3s cluster — 1 master, 2 workers.</p>
+            <p>The top machine is an Intel NUC hosting Plex Media Server. The bottom is the Proxmox hypervisor running a 3-node K3s cluster: 1 master, 2 workers.</p>
             <p class="tag-row"><span>Proxmox</span><span>K3s</span><span>Plex</span></p>
           </div>
         </article>
@@ -247,7 +280,7 @@
   </section>
 
   <!-- ============ PROJECTS ============ -->
-  <section class="section" id="projects">
+  <section class="section alt" id="projects">
     <div class="wrap">
       <p class="eyebrow">Projects</p>
       <h2 class="section-title">Side quests &amp; open source</h2>
@@ -293,7 +326,7 @@
           </a>
           <div class="project-body">
             <h3><a href="https://github.com/dqle/inMeeting" target="_blank" rel="noopener">inMeeting</a></h3>
-            <p>Cross-platform Golang app for macOS and Windows&nbsp;11 that lights up a Raspberry Pi Unicorn Mini&nbsp;Hat whenever you are in a meeting — a hardware "do not interrupt me" sign.</p>
+            <p>Cross-platform Golang app for macOS and Windows&nbsp;11 that lights up a Raspberry Pi Unicorn Mini&nbsp;Hat whenever you are in a meeting: a hardware "do not interrupt me" sign.</p>
             <p class="tag-row"><span>Go</span><span>macOS</span><span>Windows</span></p>
           </div>
         </article>
@@ -304,7 +337,7 @@
           </a>
           <div class="project-body">
             <h3><a href="https://github.com/dqle/go-media-devices-state" target="_blank" rel="noopener">go-media-devices-state</a></h3>
-            <p>Cross-platform Go module for macOS and Windows that reports camera and microphone state — i.e. whether your camera/mic is currently on or off.</p>
+            <p>Cross-platform Go module for macOS and Windows that reports camera and microphone state, i.e. whether your camera/mic is currently on or off.</p>
             <p class="tag-row"><span>Go</span><span>Library</span><span>Privacy</span></p>
           </div>
         </article>
@@ -315,7 +348,7 @@
           </a>
           <div class="project-body">
             <h3><a href="https://github.com/dqle/hoyolab-check-in-helm" target="_blank" rel="noopener">Hoyolab Check-In Helm Chart</a></h3>
-            <p>A Helm chart that deploys a Kubernetes cronjob to collect Hoyoverse daily check-in rewards. Runs at 12:10&nbsp;AM UTC+8 by default — ten minutes after the daily reward reset.</p>
+            <p>A Helm chart that deploys a Kubernetes cronjob to collect Hoyoverse daily check-in rewards. Runs at 12:10&nbsp;AM UTC+8 by default, ten minutes after the daily reward reset.</p>
             <p class="tag-row"><span>Helm</span><span>Kubernetes</span><span>CronJob</span></p>
           </div>
         </article>
@@ -341,7 +374,7 @@
 
 <footer class="footer">
   <div class="wrap footer-row">
-    <span class="mono">© <span id="year">2026</span> Duc Le &mdash; dqle.io</span>
+    <span class="mono">© <span id="year">2026</span> Duc Le · dqle.io</span>
     <span class="footer-links">
       <a href="#top">Back to top ↑</a>
     </span>

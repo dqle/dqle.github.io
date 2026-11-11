@@ -1,4 +1,4 @@
-/* dqle.io — site behaviour: theme toggle, scroll reveal, nav spy, topbar state */
+/* dqle.io | site behaviour: theme toggle, scroll reveal, nav spy, topbar state */
 (function () {
   'use strict';
 
