@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" class="gated">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,43 +14,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<script>
-  document.documentElement.classList.add('js');
-  (function () {
-    var unlocked = false;
-    try { unlocked = sessionStorage.getItem('dqle-unlocked') === '1'; } catch (e) { }
-    if (unlocked) document.documentElement.classList.remove('gated');
-  })();
-</script>
 <link rel="stylesheet" href="assets/css/site.css" />
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-  <!-- ============ PASSWORD GATE ============ -->
-  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
-    <div class="gate-card">
-      <svg class="gate-lock" viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="4" y="10" width="16" height="11" rx="2.5" />
-        <path d="M8 10V7a4 4 0 0 1 8 0v3" />
-        <circle cx="12" cy="15.5" r="1.4" />
-      </svg>
-      <h1 id="gateTitle">Duc Le</h1>
-      <p class="gate-lede">This site is password&nbsp;protected. Enter the password to continue.</p>
-      <form id="gateForm" class="gate-form" autocomplete="on">
-        <label class="sr-only" for="gatePass">Password</label>
-        <input class="gate-input" id="gatePass" name="password" type="password" placeholder="Password"
-               autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" required />
-        <button class="btn btn-primary gate-btn" id="gateBtn" type="submit">Unlock</button>
-      </form>
-      <p class="gate-note" id="gateNote"></p>
-      <noscript><p class="gate-note">JavaScript is disabled — enable it to unlock this site.</p></noscript>
-      <p class="gate-secure">Static-site gate: deters casual visitors, not a serious attacker.</p>
-    </div>
-  </div>
-
   <a class="skip" href="#main">Skip to content</a>
 
-<header class="topbar" id="topbar" inert>
+<header class="topbar" id="topbar">
   <a class="brand" href="#top"><span class="brand-mark">DL</span><span class="brand-name">Duc Le</span></a>
   <nav class="nav" aria-label="Primary">
     <a href="#about">About</a>
@@ -68,7 +39,7 @@
   </div>
 </header>
 
-<main id="main" inert>
+<main id="main">
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
@@ -374,7 +345,7 @@
   </section>
 </main>
 
-<footer class="footer" inert>
+<footer class="footer">
   <div class="wrap footer-row">
     <span class="mono">© <span id="year">2026</span> Duc Le &mdash; dqle.io</span>
     <span class="footer-links">
@@ -383,7 +354,6 @@
   </div>
 </footer>
 
-<script src="assets/js/gate.js" defer></script>
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>
